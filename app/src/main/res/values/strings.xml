@@ -1,3 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Sharp Pixel</string>
+    <string name="need_permission">Need Permission</string>
+    <string name="give_permission">Give Permission</string>
+    <string name="permission_denied">Permission Denied!</string>
+    <string name="process_image">Process Image</string>
+    <string name="save_to_gallery">Save to Gallery</string>
+    <string name="add_image">Click to select image</string>
 </resources>
