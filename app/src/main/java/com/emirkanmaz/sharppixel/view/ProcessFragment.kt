@@ -53,14 +53,24 @@ class ProcessFragment : Fragment() {
 
         registerLaunchers()
 
-        binding.inputText.setOnClickListener {
+        binding.inputImageView.setOnClickListener {
             if (!binding.progressBar.isVisible){
                 selectImage(it)
             }
         }
-        binding.inputImageView.setOnClickListener {
-            if (!binding.progressBar.isVisible){
-                selectImage(it)
+
+        binding.processButton.setOnClickListener {
+            lifecycleScope.launch {
+                viewModel.processImage()
+            }
+        }
+
+        binding.saveButton.setOnClickListener {
+            viewModel.processedBitmap.value?.let { bitmap ->
+                saveBitmapToGallery(bitmap)
+            } ?: run {
+                Toast.makeText(requireContext(),
+                    getString(R.string.no_image_to_save), Toast.LENGTH_SHORT).show()
             }
         }
 
@@ -78,21 +88,13 @@ class ProcessFragment : Fragment() {
             }
         }
 
-        binding.processButton.setOnClickListener {
-            lifecycleScope.launch {
+        viewModel._processingStatus.observe(viewLifecycleOwner) { isProcessing ->
+            if (isProcessing) {
                 binding.progressBar.visibility = View.VISIBLE
                 binding.processButton.isEnabled = false
                 binding.saveButton.isEnabled = false
-                viewModel.processImage()
+            } else {
                 binding.progressBar.visibility = View.GONE
-            }
-        }
-
-        binding.saveButton.setOnClickListener {
-            viewModel.processedBitmap.value?.let { bitmap ->
-                saveBitmapToGallery(bitmap)
-            } ?: run {
-                Toast.makeText(requireContext(), "No processed image to save", Toast.LENGTH_SHORT).show()
             }
         }
     }
@@ -127,9 +129,9 @@ class ProcessFragment : Fragment() {
         activityResultLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
             if (result.resultCode == AppCompatActivity.RESULT_OK) {
                 result.data?.data?.let { uri ->
-                    lifecycleScope.launch {
+
                         viewModel.loadBitmapFromUri(uri)
-                    }
+
                 }
             }
         }
@@ -178,9 +180,10 @@ class ProcessFragment : Fragment() {
                 uri?.let { requireContext().contentResolver.update(it, contentValues, null, null) }
             }
 
-            Toast.makeText(requireContext(), "Image saved to gallery", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(),
+                getString(R.string.image_saved_to_gallery), Toast.LENGTH_SHORT).show()
         } catch (e: Exception) {
-            Toast.makeText(requireContext(), "Failed to save image: ${e.message}", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(), "${e.message}", Toast.LENGTH_SHORT).show()
             e.printStackTrace()
         } finally {
             fos?.close()

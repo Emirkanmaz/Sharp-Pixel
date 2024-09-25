@@ -20,15 +20,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        app:dotsColor="#2196F3"
-        app:selectedDotColor="#2196F3"
+        app:dotsColor="@color/colorPrimary"
+        app:selectedDotColor="@color/colorPrimary"
         app:dotsCornerRadius="8dp"
         app:dotsSize="16dp"
-        app:dotsSpacing="4dp"
+        app:dotsSpacing="16dp"
         app:dotsWidthFactor="2.5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginBottom="5dp"/>
+        android:layout_marginBottom="55dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

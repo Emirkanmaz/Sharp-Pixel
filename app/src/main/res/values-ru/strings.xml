@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sharp Pixel</string>
+    <string name="need_permission">Требуется разрешение.</string>
+    <string name="give_permission">Предоставить разрешение</string>
+    <string name="permission_denied">Разрешение отклонено!</string>
+    <string name="process_image">Обработать изображение</string>
+    <string name="save_to_gallery">Сохранить в галерею</string>
+    <string name="first_screen">Добро пожаловать в Sharp Pixel</string>
+    <string name="first_desc">Выберите изображение и избавьтесь от пикселей. Интернет не требуется. Всё на вашем телефоне.</string>
+    <string name="second_screen">Небольшое примечание</string>
+    <string name="second_desc">Приложение лучше всего работает с пикселизированными изображениями. Может вызвать искажения на уже гладких изображениях.</string>
+    <string name="no_image_to_save">Нет обработанного изображения для сохранения.</string>
+    <string name="image_saved_to_gallery">Изображение сохранено в галерею.</string>
+
+</resources>

@@ -1,8 +1,19 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.SharpPixel" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Primary theme colors -->
+        <item name="colorPrimary">@color/colorPrimary</item> <!-- Blue shade -->
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item> <!-- Darker blue -->
+        <item name="colorOnPrimary">#FFFFFF</item> <!-- Text on primary (white) -->
+
+        <!-- Secondary colors (can use neutral tones for simplicity) -->
+        <item name="colorSecondary">@color/colorSecondary</item> <!-- Accent orange -->
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariant</item> <!-- Darker accent -->
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Button style with nice blue color -->
+        <item name="colorButtonNormal">@color/colorButtonNormal</item> <!-- Blue button background -->
+        <item name="android:textColor">@color/textColor</item> <!-- White text on buttons -->
     </style>
 
     <style name="Theme.SharpPixel" parent="Base.Theme.SharpPixel" />

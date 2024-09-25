@@ -9,8 +9,10 @@ import android.provider.MediaStore
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.viewModelScope
 import com.emirkanmaz.sharppixel.model.ImageProcessor
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
 class ProcessViewModel(application: Application): AndroidViewModel(application) {
@@ -20,10 +22,12 @@ class ProcessViewModel(application: Application): AndroidViewModel(application) 
     private val _processedBitmap = MutableLiveData<Bitmap?>()
     val processedBitmap: LiveData<Bitmap?> get() = _processedBitmap
 
+    val _processingStatus = MutableLiveData<Boolean>()
+
     private val imageProcessor: ImageProcessor = ImageProcessor()
 
-    suspend fun loadBitmapFromUri(uri: Uri) {
-        withContext(Dispatchers.IO) {
+    fun loadBitmapFromUri(uri: Uri) {
+        viewModelScope.launch(Dispatchers.IO) {
             try {
                 val bitmap = if (Build.VERSION.SDK_INT >= 29) {
                     val source = ImageDecoder.createSource(getApplication<Application>().contentResolver, uri)
@@ -47,11 +51,19 @@ class ProcessViewModel(application: Application): AndroidViewModel(application) 
         withContext(Dispatchers.Default) {
             _selectedBitmap.value?.let { bitmap ->
                 try {
+                    withContext(Dispatchers.Main) {
+                        _processingStatus.postValue(true)  // You could have an observer on this in the fragment
+                    }
+
                     val originalWidth = bitmap.width
                     val originalHeight = bitmap.height
                     val processedBitmap = imageProcessor.predictImage(getApplication(), bitmap)
                     val scaledBitmap = Bitmap.createScaledBitmap(processedBitmap, originalWidth * 2, originalHeight * 2, true)
                     _processedBitmap.postValue(scaledBitmap)
+
+                    withContext(Dispatchers.Main) {
+                        _processingStatus.postValue(false)
+                    }
                 } catch (e: Exception) {
                     e.printStackTrace()
                     _processedBitmap.postValue(null)

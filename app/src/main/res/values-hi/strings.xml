@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sharp Pixel</string>
+    <string name="need_permission">अनुमति की आवश्यकता है।</string>
+    <string name="give_permission">अनुमति दें</string>
+    <string name="permission_denied">अनुमति अस्वीकृत!</string>
+    <string name="process_image">छवि संसाधित करें</string>
+    <string name="save_to_gallery">गैलरी में सहेजें</string>
+    <string name="first_screen">Sharp Pixel में आपका स्वागत है</string>
+    <string name="first_desc">अपनी छवि चुनें और पिक्सल से छुटकारा पाएं। कोई इंटरनेट नहीं। सब कुछ आपके फ़ोन पर है।</string>
+    <string name="second_screen">एक छोटा सा नोट</string>
+    <string name="second_desc">ऐप सबसे अच्छा पिक्सेल वाली छवियों पर काम करता है। पहले से ही चिकनी छवियों में विकृति हो सकती है।</string>
+    <string name="no_image_to_save">सहेजने के लिए कोई संसाधित छवि नहीं है।</string>
+    <string name="image_saved_to_gallery">छवि गैलरी में सहेजी गई।</string>
+
+</resources>
