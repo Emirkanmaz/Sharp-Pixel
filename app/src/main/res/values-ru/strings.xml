@@ -12,5 +12,7 @@
     <string name="second_desc">Приложение лучше всего работает с пикселизированными изображениями. Может вызвать искажения на уже гладких изображениях.</string>
     <string name="no_image_to_save">Нет обработанного изображения для сохранения.</string>
     <string name="image_saved_to_gallery">Изображение сохранено в галерею.</string>
+    <string name="next">Следующий</string>
+    <string name="start">Начинать</string>
 
 </resources>

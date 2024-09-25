@@ -12,5 +12,7 @@
     <string name="second_desc">يعمل التطبيق بشكل أفضل مع الصور المنقطة. قد يتسبب في تشويه الصور الناعمة بالفعل.</string>
     <string name="no_image_to_save">لا توجد صورة معالجة للحفظ.</string>
     <string name="image_saved_to_gallery">تم حفظ الصورة في المعرض.</string>
+    <string name="next">التالي</string>
+    <string name="start">يبدأ</string>
 
 </resources>

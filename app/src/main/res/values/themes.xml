@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.SharpPixel" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.SharpPixel" parent="Theme.Material3.Light.NoActionBar">
         <!-- Primary theme colors -->
         <item name="colorPrimary">@color/colorPrimary</item> <!-- Blue shade -->
         <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item> <!-- Darker blue -->
@@ -13,7 +13,7 @@
 
         <!-- Button style with nice blue color -->
         <item name="colorButtonNormal">@color/colorButtonNormal</item> <!-- Blue button background -->
-        <item name="android:textColor">@color/textColor</item> <!-- White text on buttons -->
+        <item name="android:textColor">@color/textColor</item>
     </style>
 
     <style name="Theme.SharpPixel" parent="Base.Theme.SharpPixel" />

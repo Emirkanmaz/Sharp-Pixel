@@ -12,5 +12,7 @@
     <string name="second_desc">该应用程序在像素化图像上效果最佳。可能会导致已经平滑的图像出现失真。</string>
     <string name="no_image_to_save">没有可保存的处理后图像。</string>
     <string name="image_saved_to_gallery">图像已保存到图库。</string>
+    <string name="next">下一個</string>
+    <string name="start">開始</string>
 
 </resources>

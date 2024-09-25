@@ -12,5 +12,7 @@
     <string name="second_desc">Die App funktioniert am besten bei verpixelten Bildern. Sie kann bei bereits glatten Bildern Verzerrungen verursachen.</string>
     <string name="no_image_to_save">Kein verarbeitetes Bild zum Speichern.</string>
     <string name="image_saved_to_gallery">Bild wurde in der Galerie gespeichert.</string>
+    <string name="next">Nächste</string>
+    <string name="start">Start</string>
 
 </resources>

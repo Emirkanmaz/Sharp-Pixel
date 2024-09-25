@@ -12,4 +12,6 @@
     <string name="second_desc">The application works best on pixelated images. It may cause distortions in already smooth images.</string>
     <string name="no_image_to_save">No processed image to save.</string>
     <string name="image_saved_to_gallery">Image saved to gallery.</string>
+    <string name="next">Next</string>
+    <string name="start">Start</string>
 </resources>

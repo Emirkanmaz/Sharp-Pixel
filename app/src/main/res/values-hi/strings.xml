@@ -12,5 +12,7 @@
     <string name="second_desc">ऐप सबसे अच्छा पिक्सेल वाली छवियों पर काम करता है। पहले से ही चिकनी छवियों में विकृति हो सकती है।</string>
     <string name="no_image_to_save">सहेजने के लिए कोई संसाधित छवि नहीं है।</string>
     <string name="image_saved_to_gallery">छवि गैलरी में सहेजी गई।</string>
+    <string name="next">अगला</string>
+    <string name="start">शुरू</string>
 
 </resources>
