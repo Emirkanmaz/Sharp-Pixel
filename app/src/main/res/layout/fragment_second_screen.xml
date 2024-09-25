@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:text="@string/second_screen"
         android:textSize="30sp"
-        android:layout_marginTop="46dp"
+        android:layout_marginTop="60dp"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,9 +22,8 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="46dp"
-        android:src="@drawable/first"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/second_half"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/firstText" />
 
@@ -34,9 +33,9 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:paddingHorizontal="20dp"
-        android:layout_marginTop="46dp"
         android:text="@string/second_desc"
-        android:textSize="20sp"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/finishButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
