@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sharp Pixel</string>
+    <string name="need_permission">Berechtigung erforderlich.</string>
+    <string name="give_permission">Berechtigung erteilen</string>
+    <string name="permission_denied">Berechtigung verweigert!</string>
+    <string name="process_image">Bild verarbeiten</string>
+    <string name="save_to_gallery">In Galerie speichern</string>
+    <string name="first_screen">Willkommen bei Sharp Pixel</string>
+    <string name="first_desc">Wählen Sie Ihr Bild aus und entfernen Sie die Pixel. Kein Internet erforderlich. Alles befindet sich auf Ihrem Telefon.</string>
+    <string name="second_screen">Eine kleine Notiz</string>
+    <string name="second_desc">Die App funktioniert am besten bei verpixelten Bildern. Sie kann bei bereits glatten Bildern Verzerrungen verursachen.</string>
+    <string name="no_image_to_save">Kein verarbeitetes Bild zum Speichern.</string>
+    <string name="image_saved_to_gallery">Bild wurde in der Galerie gespeichert.</string>
+    <string name="next">Nächste</string>
+    <string name="start">Start</string>
+
+</resources>

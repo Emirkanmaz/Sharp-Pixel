@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sharp Pixel</string>
+    <string name="need_permission">İzin Gerekli.</string>
+    <string name="give_permission">İzin Ver</string>
+    <string name="permission_denied">İzin Reddedildi!</string>
+    <string name="process_image">Görüntüyü İşle</string>
+    <string name="save_to_gallery">Galeriye Kaydet</string>
+    <string name="first_screen">Sharp Pixel\'e Hoş Geldiniz</string>
+    <string name="first_desc">Görüntünüzü seçin ve piksellerden kurtulun. İnternet yok. Her şey telefonunuzda.</string>
+    <string name="second_screen">Küçük Bir Not</string>
+    <string name="second_desc">Uygulama, en iyi şekilde pikselli görüntülerde çalışır. Zaten düzgün olan görüntülerde bozulmalara neden olabilir.</string>
+    <string name="no_image_to_save">Kaydedilecek işlenmiş görüntü yok.</string>
+    <string name="image_saved_to_gallery">Görüntü galeriye kaydedildi.</string>
+    <string name="next">Sonraki</string>
+    <string name="start">Başla</string>
+
+</resources>

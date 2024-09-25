@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sharp Pixel</string>
+    <string name="need_permission">需要权限。</string>
+    <string name="give_permission">授予权限</string>
+    <string name="permission_denied">权限被拒绝！</string>
+    <string name="process_image">处理图像</string>
+    <string name="save_to_gallery">保存到图库</string>
+    <string name="first_screen">欢迎使用 Sharp Pixel</string>
+    <string name="first_desc">选择您的图像，摆脱像素。无需网络。一切都在您的手机上。</string>
+    <string name="second_screen">小提示</string>
+    <string name="second_desc">该应用程序在像素化图像上效果最佳。可能会导致已经平滑的图像出现失真。</string>
+    <string name="no_image_to_save">没有可保存的处理后图像。</string>
+    <string name="image_saved_to_gallery">图像已保存到图库。</string>
+    <string name="next">下一個</string>
+    <string name="start">開始</string>
+
+</resources>

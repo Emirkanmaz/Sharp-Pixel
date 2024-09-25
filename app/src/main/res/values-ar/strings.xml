@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sharp Pixel</string>
+    <string name="need_permission">مطلوب إذن.</string>
+    <string name="give_permission">امنح الإذن</string>
+    <string name="permission_denied">تم رفض الإذن!</string>
+    <string name="process_image">معالجة الصورة</string>
+    <string name="save_to_gallery">احفظ في المعرض</string>
+    <string name="first_screen">مرحبًا بك في Sharp Pixel</string>
+    <string name="first_desc">اختر صورتك وتخلص من البيكسلات. لا حاجة إلى الإنترنت. كل شيء على هاتفك.</string>
+    <string name="second_screen">ملاحظة صغيرة</string>
+    <string name="second_desc">يعمل التطبيق بشكل أفضل مع الصور المنقطة. قد يتسبب في تشويه الصور الناعمة بالفعل.</string>
+    <string name="no_image_to_save">لا توجد صورة معالجة للحفظ.</string>
+    <string name="image_saved_to_gallery">تم حفظ الصورة في المعرض.</string>
+    <string name="next">التالي</string>
+    <string name="start">يبدأ</string>
+
+</resources>
