@@ -5,7 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.emirkanmaz.sharppixel.R
 import com.emirkanmaz.sharppixel.databinding.FragmentViewPagerBinding
 import com.emirkanmaz.sharppixel.onboarding.adapter.ViewPagerAdapter
 import com.emirkanmaz.sharppixel.onboarding.screens.FirstScreenFragment

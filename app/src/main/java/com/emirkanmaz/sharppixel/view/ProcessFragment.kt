@@ -184,7 +184,7 @@ class ProcessFragment : Fragment() {
                 getString(R.string.image_saved_to_gallery), Toast.LENGTH_SHORT).show()
         } catch (e: Exception) {
             Toast.makeText(requireContext(), "${e.message}", Toast.LENGTH_SHORT).show()
-            e.printStackTrace()
+//            e.printStackTrace()
         } finally {
             fos?.close()
         }
