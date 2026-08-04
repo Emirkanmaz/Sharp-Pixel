@@ -5,14 +5,14 @@ plugins {
 
 android {
     namespace = "com.emirkanmaz.sharppixel"
-    compileSdk = 35
+    compileSdk = 37
     ndkVersion = "27.1.12297006"
 
     defaultConfig {
         applicationId = "com.emirkanmaz.sharppixel"
         minSdk = 24
-        targetSdk = 35
-        versionCode = 3
+        targetSdk = 37
+        versionCode = 4
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
